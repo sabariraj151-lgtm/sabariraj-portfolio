@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sabari Raj | Brand Designer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b0b0f;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Gradient Glow Background */
+body::before{
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    background:radial-gradient(circle,#c9a22733,transparent 70%);
+    top:-200px;
+    left:-200px;
+    z-index:-1;
+}
+
+section{
+    padding:100px 10%;
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s ease;
+}
+
+section.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:800;
+}
+
+.hero span{
+    background:linear-gradient(45deg,#c9a227,#ffffff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    margin:20px 0;
+    color:#aaa;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    margin-right:15px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.4s;
+    background:linear-gradient(45deg,#c9a227,#e6c35c);
+    color:#000;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(201,162,39,0.4);
+}
+
+/* Glass Card Effect */
+
+.glass{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+}
+
+/* About */
+
+.about{
+    padding:60px;
+}
+
+.section-title{
+    font-size:32px;
+    margin-bottom:30px;
+    color:#c9a227;
+}
+
+/* Services */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.service-box{
+    padding:40px;
+    transition:0.4s;
+}
+
+.service-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* Portfolio */
+
+.portfolio{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.portfolio-box{
+    height:220px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:600;
+    color:#c9a227;
+    transition:0.4s;
+}
+
+.portfolio-box:hover{
+    transform:scale(1.05);
+    box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+    padding:60px;
+}
+
+/* WhatsApp Floating Button */
+
+.whatsapp{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:#25D366;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    color:#fff;
+    text-decoration:none;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:#777;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero active">
+    <h1>Hi, I'm <span>Sabari Raj</span></h1>
+    <p>Graphic Designer • Brand Strategist • Entrepreneur</p>
+    <p>Designing brands that don’t just look good — they sell.</p>
+    <div>
+        <a href="#portfolio" class="btn">View My Work</a>
+        <a href="#contact" class="btn">Hire Me</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <div class="glass about">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            With 4+ years of professional experience, I specialize in branding,
+            high-converting ad creatives, premium packaging design, and digital
+            marketing visuals. As an entrepreneur, I understand business growth,
+            not just design aesthetics.
+        </p>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section>
+    <h2 class="section-title">My Services</h2>
+    <div class="services">
+        <div class="glass service-box">Logo & Brand Identity</div>
+        <div class="glass service-box">Social Media Creatives</div>
+        <div class="glass service-box">Ad Campaign Design</div>
+        <div class="glass service-box">Packaging Design</div>
+        <div class="glass service-box">Website UI Design</div>
+        <div class="glass service-box">Business Branding Strategy</div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+    <h2 class="section-title">Selected Works</h2>
+    <div class="portfolio">
+        <div class="glass portfolio-box">Brand Identity</div>
+        <div class="glass portfolio-box">Ad Creatives</div>
+        <div class="glass portfolio-box">Packaging Design</div>
+        <div class="glass portfolio-box">Social Media Campaigns</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="glass contact">
+        <h2 class="section-title">Let’s Build Something Powerful</h2>
+        <p>Email: yourmail@email.com</p>
+        <p>WhatsApp: +91 XXXXX XXXXX</p>
+        <p>Instagram: @sabariraj</p>
+    </div>
+</section>
+
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬</a>
+
+<footer>
+    © 2026 Sabari Raj | Premium Brand Designer
+</footer>
+
+<script>
+// Scroll Animation
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(sec => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 500;
+        const height = sec.offsetHeight;
+        if(top >= offset && top < offset + height){
+            sec.classList.add("active");
+        }
+    });
+});
+</script>
+
+</body>
+</html>
